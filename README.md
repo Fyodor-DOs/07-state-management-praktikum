@@ -34,3 +34,54 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Laporan Praktikum
+
+|  | Pemrograman Berbasis Framework 2025 |
+|--|--|
+| NIM |  2241720083 |
+| Nama |  Ahmed Fathir Syafaat |
+| Kelas | TI - 3C |
+
+### Praktikum 1
+![alt text](assets/1.png)
+
+### Praktikum 2
+![alt text](assets/2.gif)
+
+### Praktikum 3
+![alt text](assets/3.gif)
+
+### Praktikum 4
+![alt text](assets/4.png)
+
+### Praktikum 5
+![alt text](assets/5.gif)
+
+### Tugas
+1. Bandingkan performa antara Context API, Zustand, dan Redux
+
+| Kriteria         | Context API                         | Zustand                         | Redux Toolkit                        |
+|------------------|--------------------------------------|----------------------------------|--------------------------------------|
+| Kompleksitas     | Rendah                               | Medium                           | Tinggi                               |
+| Performa         | Rendah (mudah terjadi over-render)    | Tinggi (minim re-render)          | Medium (lebih berat dari Zustand)    |
+| SSR Support      | Manual (perlu setup sendiri)          | Auto (lebih mudah integrasi)      | Menggunakan `next-redux-wrapper`     |
+| Learning Curve   | Rendah                               | Rendah                           | Tinggi (harus paham action, reducer, store) |
+| Ukuran Bundle    | 0 KB (native React)                  | ~1 KB                            | 10 KB+                               |
+
+Jadi, Context API cocok untuk state sederhana dan jarang berubah, lalu Zustand lebih optimal untuk state kompleks yang sering berubah, dengan performa tinggi dan setup ringan, dan Redux Toolkit kuat untuk proyek besar dan kompleks, terutama kalau butuh debugging dan kontrol penuh.
+
+2. Diskusikan kapan sebaiknya menggunakan masing-masing solusi
+> Context API:
+> - Untuk state sederhana, jarang berubah. Contohnya theme, auth.
+> - Proyek kecil sampai menengah yang tidak membutuhkan optimasi performa tinggi.
+
+> Zustand:
+> - Untuk state kompleks atau sering berubah.
+> - Saat ingin solusi ringan, cepat setup, dan performa tinggi.
+> - Cocok untuk dashboard, cart management, dll. 
+
+> Redux Toolkit:
+> - Untuk aplikasi skala besar dan kompleks.
+> - Ketika butuh devtools kuat, time travel debugging.
+> - Butuh kontrol penuh terhadap flow state seperti actions, reducers, middleware.
